@@ -14,6 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - run: composer --version
+      - run: composer install && composer show --outdated
 
-      - run: composer require nunomaduro/larastan --with-dependencies --dev
+      - run: composer require nunomaduro/larastan --with-all-dependencies --dev
