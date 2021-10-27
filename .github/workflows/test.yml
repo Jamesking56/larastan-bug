@@ -16,4 +16,4 @@ jobs:
 
       - run: composer --version
 
-      - run: composer require nunomaduro/larastan --with-dependencies --dev
+      - run: composer require nunomaduro/larastan:0.7.14 --with-all-dependencies --dev
